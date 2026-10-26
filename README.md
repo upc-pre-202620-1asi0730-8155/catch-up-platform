@@ -77,7 +77,7 @@ By default, development uses `CatchUpPlatform.API/appsettings.Development.json`:
 
 ```json
 "ConnectionStrings": {
-  "DefaultConnection": "server=localhost;user=root;password=password;database=catch-up-wa"
+  "DefaultConnection": "server=localhost;user=root;password=<password>;database=catch-up-wa"
 }
 ```
 
@@ -96,6 +96,16 @@ dotnet run
 
 ### Database initialization
 
+#### Dotnet Tooling
+
+Install the EF Core tools globally and create the initial migration and update the database:
+```bash
+dotnet tool install --global dotnet-ef
+cd CatchUpPlatform.API
+dotnet ef migrations add InitialCreate
+dotnet ef database update
+```
+
 The application automatically applies pending EF Core migrations on startup via `Database.Migrate()`.
 
 - **Development**: Applies the current schema to the configured MySQL database.
@@ -107,8 +117,8 @@ The application automatically applies pending EF Core migrations on startup via 
 
 With the included launch profiles, Scalar is commonly available at:
 
-- `http://localhost:5128/scalar`
-- `https://localhost:7234/scalar`
+- `http://localhost:5113/scalar`
+- `https://localhost:7106/scalar`
 
 The generated OpenAPI document is available at `/openapi/v1.json`.
 

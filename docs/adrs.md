@@ -265,10 +265,10 @@ Never log a News API key in clear text. Use `NewsApiKey.MaskedForLogging()` on v
 - **Date:** 2026-10-16
 
 ### Context
-Swashbuckle was used to generate the API description and serve Swagger UI. ASP.NET Core now ships built-in OpenAPI document generation (`Microsoft.AspNetCore.OpenApi`), and Microsoft documents it as the supported path, while the UI is an independent choice (Swagger UI, ReDoc, Scalar, and others are all listed as options).
+Swashbuckle was used to generate the API description and serve OpenAPI UI. ASP.NET Core now ships built-in OpenAPI document generation (`Microsoft.AspNetCore.OpenApi`), and Microsoft documents it as the supported path, while the UI is an independent choice (OpenAPI UI, ReDoc, Scalar, and others are all listed as options).
 
 ### Decision
-Generate the document with `AddOpenApi`/`MapOpenApi` (served at `/openapi/v1.json`) and serve the API explorer with `Scalar.AspNetCore` (`/scalar`). Localized summaries, descriptions, and schema texts are applied through operation and schema transformers in `LocalizedOpenApiAssembler`. Response metadata uses `[ProducesResponseType]`. Swashbuckle packages and `Swagger*` attributes are removed.
+Generate the document with `AddOpenApi`/`MapOpenApi` (served at `/openapi/v1.json`) and serve the API explorer with `Scalar.AspNetCore` (`/scalar`). Localized summaries, descriptions, and schema texts are applied through operation and schema transformers in `LocalizedOpenApiAssembler`. Response metadata uses `[ProducesResponseType]`. Swashbuckle packages and `OpenAPI*` attributes are removed.
 
 The document and UI remain mapped in all environments to preserve previous behavior.
 

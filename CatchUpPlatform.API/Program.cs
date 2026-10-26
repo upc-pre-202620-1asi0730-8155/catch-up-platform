@@ -113,7 +113,7 @@ using (var scope = app.Services.CreateScope())
 // Configure the HTTP request pipeline.
 app.UseExceptionHandler();
 
-// Localization must run before Swagger so generated documentation follows the request culture.
+// Localization must run before OpenAPI so generated documentation follows the request culture.
 string[] supportedCultures = ["en", "en-US", "es", "es-PE"];
 var localizationOptions = new RequestLocalizationOptions()
     .SetDefaultCulture(supportedCultures[0])

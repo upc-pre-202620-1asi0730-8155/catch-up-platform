@@ -1,0 +1,111 @@
+<root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        </value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        </value>
+    </resheader>
+    <data name="NewsFavoriteSourceDuplicated" xml:space="preserve">
+        <value>Favorite source con este SourceId ya existe para el NewsApiKey brindado</value>
+    </data>
+    <data name="UnexpectedServerError" xml:space="preserve">
+        <value>Error inesperado del servidor</value>
+    </data>
+    <data name="UnexpectedErrorCreatingFavoriteSource" xml:space="preserve">
+        <value>Ocurrió un error inesperado al crear la fuente favorita.</value>
+    </data>
+    <data name="UnexpectedErrorProcessingRequest" xml:space="preserve">
+        <value>Ocurrió un error inesperado al procesar su solicitud.</value>
+    </data>
+    <data name="InvalidFavoriteSourceRequest" xml:space="preserve">
+        <value>La solicitud de fuente favorita contiene valores no válidos.</value>
+    </data>
+    <data name="InvalidFavoriteSourceQuery" xml:space="preserve">
+        <value>Los parámetros de consulta para fuentes favoritas contienen valores no válidos.</value>
+    </data>
+    <data name="InvalidModelStateTitle" xml:space="preserve">
+        <value>La solicitud contiene valores no válidos.</value>
+    </data>
+    <data name="RequiredNewsApiKey" xml:space="preserve">
+        <value>La clave de News API es obligatoria.</value>
+    </data>
+    <data name="RequiredSourceId" xml:space="preserve">
+        <value>El ID de la fuente es obligatorio.</value>
+    </data>
+    <data name="CreateFavoriteSourceSummary" xml:space="preserve">
+        <value>Crear una fuente favorita</value>
+    </data>
+    <data name="CreateFavoriteSourceDescription" xml:space="preserve">
+        <value>Crea una fuente favorita usando una clave de News API y el ID de la fuente.</value>
+    </data>
+    <data name="CreateFavoriteSourceCreated" xml:space="preserve">
+        <value>Se creó la fuente favorita.</value>
+    </data>
+    <data name="CreateFavoriteSourceBadRequest" xml:space="preserve">
+        <value>El cuerpo de la solicitud no es válido.</value>
+    </data>
+    <data name="CreateFavoriteSourceConflict" xml:space="preserve">
+        <value>La fuente favorita ya existe.</value>
+    </data>
+    <data name="CreateFavoriteSourceServerError" xml:space="preserve">
+        <value>Ocurrió un error inesperado en el servidor.</value>
+    </data>
+    <data name="GetFavoriteSourceQuerySummary" xml:space="preserve">
+        <value>Obtener fuentes favoritas mediante parámetros de consulta</value>
+    </data>
+    <data name="GetFavoriteSourceQueryDescription" xml:space="preserve">
+        <value>Proporcione solo newsApiKey para listar las fuentes favoritas coincidentes (una lista vacía si no hay ninguna). Agregue sourceId para obtener una fuente favorita específica.</value>
+    </data>
+    <data name="GetFavoriteSourceQuerySuccess" xml:space="preserve">
+        <value>Se encontró la fuente o las fuentes favoritas coincidentes.</value>
+    </data>
+    <data name="GetFavoriteSourceQueryBadRequest" xml:space="preserve">
+        <value>Falta un parámetro de consulta obligatorio o no es válido.</value>
+    </data>
+    <data name="GetFavoriteSourceQueryNotFound" xml:space="preserve">
+        <value>No existe una fuente favorita que coincida con newsApiKey y sourceId.</value>
+    </data>
+    <data name="GetFavoriteSourceByIdSummary" xml:space="preserve">
+        <value>Obtener una fuente favorita por ID</value>
+    </data>
+    <data name="GetFavoriteSourceByIdDescription" xml:space="preserve">
+        <value>Obtiene una fuente favorita mediante su identificador.</value>
+    </data>
+    <data name="GetFavoriteSourceByIdSuccess" xml:space="preserve">
+        <value>Se encontró la fuente favorita.</value>
+    </data>
+    <data name="GetFavoriteSourceByIdNotFound" xml:space="preserve">
+        <value>No se encontró la fuente favorita.</value>
+    </data>
+    <data name="CreateFavoriteSourceSchema" xml:space="preserve">
+        <value>Datos de la solicitud para crear una fuente favorita.</value>
+    </data>
+    <data name="CreateFavoriteSourceNewsApiKey" xml:space="preserve">
+        <value>La clave de News API proporcionada por NewsAPI.</value>
+    </data>
+    <data name="CreateFavoriteSourceSourceId" xml:space="preserve">
+        <value>El identificador de la fuente proporcionado por NewsAPI.</value>
+    </data>
+    <data name="FavoriteSourceSchema" xml:space="preserve">
+        <value>Una fuente favorita devuelta por la API.</value>
+    </data>
+    <data name="FavoriteSourceId" xml:space="preserve">
+        <value>El identificador de la fuente favorita generado por el servidor.</value>
+    </data>
+    <data name="FavoriteSourceNewsApiKey" xml:space="preserve">
+        <value>La clave de News API asociada con la fuente favorita.</value>
+    </data>
+    <data name="FavoriteSourceSourceId" xml:space="preserve">
+        <value>El identificador de la fuente de NewsAPI.</value>
+    </data>
+</root>

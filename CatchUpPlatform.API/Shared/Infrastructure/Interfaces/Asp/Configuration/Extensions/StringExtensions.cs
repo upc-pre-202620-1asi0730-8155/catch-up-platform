@@ -4,7 +4,7 @@ namespace CatchUpPlatform.API.Shared.Infrastructure.Interfaces.Asp.Configuration
 
 public static partial class StringExtensions
 {
-    [GeneratedRegex("^[a-z]+(-[a-z]+)*$", RegexOptions.Compiled)]
+    [GeneratedRegex("(?<!^)([A-Z][a-z]|(?<=[a-z])[A-Z])", RegexOptions.Compiled)]
     private static partial Regex KebabCaseRegex();
 
     public static string ToKebabCase(this string text)
